@@ -1,36 +1,46 @@
 body {
     font-family: "Montserrat";
+    text-align: center;
 }
 
-#title {
-    background-color: #ff4c68;
-    color:#fff;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
 }
 
-.container-fluid{
-    padding: 3% 15% 7%;
+
+p {
+    color: #8f8f8f;
 }
 
-h1 {
+/* Headings */
+.big-heading {
     font-family: "Montserrat-Sanserif";
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: bold;
 }
 
-h2 {
-    font-family: "Montserrat-Bold";
+/* Containers  */
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+/* Sections  */
+.colored-section {
+    background-color: #ff4c68;
+    color:#fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
-h3 {
-    font-family: "Montserrat-Bold";
-}
-
-p {
-    color: #8f8f8f;
-}
 
 /* Navigation Bar */
 
@@ -58,6 +68,17 @@ p {
     margin: 5% 3% 5% 0%;
 }
 
+/* Title Section  */
+
+/* #title {
+    text-align: left;
+} */
+
+/* refers to container fluid only inside title section*/
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
 /* Title Image */
 .title-image {
     width: 20%;
@@ -69,13 +90,14 @@ p {
 /* Features Section */
 
 #features{
-    padding: 7% 15%;
-    background-color: #fff;
     position: relative;
 }
 
+.feature-title {
+    font-size: 1.5rem;
+}
+
 .feature-box{
-    text-align: center;
     padding: 5%;
 }
 
@@ -91,9 +113,12 @@ p {
 /* Testimonial Section */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -102,12 +127,8 @@ p {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding: 3%;
 }
 
@@ -119,7 +140,11 @@ p {
 /* Pricing section */
 #pricing {
     padding: 100px;
-    text-align: center;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-column {
@@ -137,26 +162,17 @@ p {
     }
 }
 
-/* CTA Section */
 
-#cta {
-    text-align: center;
-    background-color: #ff4c68;
-    color: #fff;
-    padding: 7% 15%;
-}
 
-.cta-heading {
+/* .cta-heading {
     font-family: "Montserrat-Black";
     font-size: 3.5rem;
     line-height: 1.5;
-}
+} */
 
 /* Footer section */
 
 #footer {
-    padding: 7% 15%;
-    text-align: center;
     background-color: #fff;
     color: #000;
 }
